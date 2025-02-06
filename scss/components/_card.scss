@@ -1,0 +1,73 @@
+@import "../abstracts/variables";
+@import "../abstracts/mixins";
+
+.card {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 16px 16px 40px;
+  background: white;
+  border: 1px solid black;
+  border-radius: 20px;
+  box-shadow: 0px 25px 25px rgba(0, 0, 0, 0.05);
+  width: 320px;
+  
+  &__image {
+    background-image: url("/images/image-qr-code.png");
+    max-width: initial;
+    width: 288px;
+    height: 288px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    box-sizing: border-box;
+    display: block;
+    flex: 0 0 auto;
+    overflow: hidden;
+  }
+
+  &__info {
+    box-sizing: border-box;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+    align-self: stretch;
+    justify-content: flex-start;
+    padding-right: 16px;
+    padding-left: 16px;
+
+    &-heading {
+      flex: 0 0 auto;
+      align-self: stretch;
+      padding: 0;
+      margin: 0;
+      font-weight: $normal-weight-font;
+      font-size: 22px;
+      line-height: 120%;
+      letter-spacing: 0px;
+      font-family: $font-family;
+      color: $state-900-color;
+      text-align: center;
+    }
+
+    &-text {
+      flex: 0 0 auto;
+      align-self: stretch;
+      padding: 0;
+      margin: 0;
+      font-weight: $light-weight-font;
+      font-size: 15px;
+      line-height: 140%;
+      font-family: $font-family;
+      color: $state-500-color;
+      text-align: center;
+      letter-spacing: 0.2px;
+    }
+  }
+}

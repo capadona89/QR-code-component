@@ -1,0 +1,16 @@
+@import "../abstracts/variables";
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: $state-300-color;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
